@@ -19,8 +19,14 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim) in LUA:
 
 ```lua
 {
-  -- amongst your other plugins
-  { 'stonemaster/import-sort.nvim' }
+	-- amongst your other plugins
+	{
+		'stonemaster/import-sort.nvim',
+		event = 'BufEnter',
+		config = function ()
+			require('import-sort')
+		end
+	}
 }
 ```
 ## Usage
