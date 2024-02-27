@@ -38,8 +38,8 @@ imports properly sorted.
 
 The logic is extremely simple: the fallback import statement is to look for
 `import` statements at the beginning of the code file. This is the common
-import statement for a lot of languages. There is a special case for C/C++
-buffer where `#include` is guessed. Other special cases can easily be added
+import statement for a lot of languages. There are special cases for C/C++
+(`#include`) as well as C# (`using`). Other special cases can easily be added
 (open either an issue or a PR).
 
 Import statements that are divided into blocks by blank lines are sorted

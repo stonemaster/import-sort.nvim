@@ -60,6 +60,8 @@ end
 local function guess_import_statement(language)
     if language == "c" or language == "cpp" then
         return "#include"
+    elseif language == "cs" then
+        return "using"
     else
         return "import"
     end
