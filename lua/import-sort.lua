@@ -62,6 +62,8 @@ local function guess_import_statement(language)
         return "#include"
     elseif language == "cs" then
         return "using"
+    elseif language == "rust" then
+        return "use"
     else
         return "import"
     end
